@@ -11,8 +11,9 @@ function deepestChild() {
   var next = [];
   while (current.childNodes.length > 1) {
     for (var i = 0; i < current.length; i++) {
-      if (current[i].childNodes.length > next) {
-        next = current[i];
+      //push divs of current into next
+      if (current[i].queryselectorAll('div') !== null) {
+        next.push(current.queryselctorAll('div'))
       }
     }
     current = next;
