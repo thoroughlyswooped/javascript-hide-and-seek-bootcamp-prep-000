@@ -8,7 +8,14 @@ function nestedTarget() {
 
 function deepestChild() {
   var current = document.querySelectorAll();
-  for (var i = 0; i < current.length; i++) {
-    if current.
+  var next = [];
+  while (current.length > 1) {
+    for (var i = 0; i < current.length; i++) {
+      if (current[i].isArray()){
+        next.push(current[i])
+      }
+    }
+    current = next;
   }
+  return current;
 }
