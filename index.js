@@ -13,7 +13,7 @@ function deepestChild() {
     for (var i = 0; i < current.length; i++) {
       //push divs of current into next
       if (current[i].querySelectorAll('div') !== null) {
-        next.push(current.querySelectorAll('div'))
+        next.push(current[i].querySelectorAll('div'))
       }
     }
     current = next;
