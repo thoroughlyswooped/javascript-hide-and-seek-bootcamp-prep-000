@@ -12,7 +12,8 @@ function deepestChild() {
   while (current.length > 1){
     //iterate through current
     for (var i = 0; i < current.length; i++) {
-      //check if element has child 
+      //check if element has child
+      return current[i].child;
       if (current[i].child !== undefined){
        next.push(current[i].child) 
       }
