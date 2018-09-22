@@ -9,7 +9,7 @@ function nestedTarget() {
 function deepestChild() {
   var current = document.querySelectorAll(`div#grand-node div`);
   var next = [];
-  while (current.childNodes.length > 1) {
+  while (current.length > 1) {
     for (var i = 0; i < current.length; i++) {
       //push divs of current into next
       if (current[i].queryselectorAll('div') !== null) {
