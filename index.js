@@ -3,11 +3,11 @@ function getFirstSelector(selector) {
 }
 
 function nestedTarget() {
-  return document.querySelector('div#nested div.target');
+  return document.querySelectorAll('div#nested div.target');
 }
 
 function deepestChild() {
-  var current = document.querySelector(`div#grand-node`);
+  var current = document.querySelector(`div#grand-node div`);
   var next = [];
   while (current.length > 1) {
     for (var i = 0; i < current.length; i++) {
