@@ -10,7 +10,7 @@ function deepestChild() {
   var current = document.querySelectorAll(`div#grand-node div`);
   var next = [];
   while (current.length > 1){
-    return current[i];
+    return current;
     //iterate through current
     for (var i = 0; i < current.length; i++) {
       //check if element has child
