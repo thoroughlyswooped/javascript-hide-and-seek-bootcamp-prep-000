@@ -20,5 +20,5 @@ function deepestChild() {
     current = next;
     next = [];
   }
-  return current[0];
+  return current;
 }
