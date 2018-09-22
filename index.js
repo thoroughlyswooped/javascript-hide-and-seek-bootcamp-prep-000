@@ -14,7 +14,7 @@ function deepestChild() {
     for (var i = 0; i < current.length; i++) {
       //check if element has child
       if (current[i].querySelctorAll('div') !== undefined){
-       next.push(current[i].child) 
+       next.push(current[i].querySeectorAll()) 
       }
     }
     current = next;
