@@ -11,7 +11,7 @@ function deepestChild() {
   var next = [];
   while (current.length > 1) {
     for (var i = 0; i < current.length; i++) {
-      if (current[i].isArray()){
+      if (current[i].i()){
         next.push(current[i])
       }
     }
