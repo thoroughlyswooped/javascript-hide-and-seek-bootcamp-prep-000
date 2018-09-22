@@ -12,7 +12,7 @@ function deepestChild() {
   while (current.length > 1) {
     for (var i = 0; i < current.length; i++) {
       //push divs of current into next
-      if (current[i].querySelectorAll('div') !== null) {
+      if (current[i].querySelectorAll('div') !== undefined) {
         next.push(current[i].querySelectorAll('div'))
       }
     }
