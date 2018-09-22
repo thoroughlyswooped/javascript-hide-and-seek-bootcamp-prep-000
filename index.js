@@ -18,5 +18,5 @@ function deepestChild() {
   //   current = next;
   //   next = [];
   // }
-  return current[0].childNodes;
+  return current[0];
 }
